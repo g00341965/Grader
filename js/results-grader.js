@@ -45,9 +45,23 @@ function gradeResult(){
 		} else {
 			mathsGrade = 'F';
 		}
-		
-		//Only output to the HTML File if a result for that subject is entered
-		console.log(message);
-		document.getElementById("resultsentence").innerHTML = message;
+	
 	}
+		//Only output to the HTML File if a result for that subject is entered
+		
+		var englishMessage = 'Your result of ' + myEnglishResult + ' gets you a grade ' + englishGrade;
+		console.log(englishMessage);
+		document.getElementById("englishresultsentence").innerHTML = englishMessage;
+		
+		var irishMessage = 'Your result of ' + myIrishResult +  ' gets you a grade ' + irishGrade;
+		console.log(irishMessage);
+		document.getElementById("irishresultsentence").innerHTML = irishMessage;
+		
+		var mathsMessage = 'Your result of ' + myMathsResult +  ' gets you a grade ' + mathsGrade;
+		console.log(mathsMessage);
+		document.getElementById("mathsresultsentence").innerHTML = mathsMessage;
+		
+	
+		
+	
 }
