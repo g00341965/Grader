@@ -16,6 +16,14 @@ function gradeResult(){
 			englishGrade = 'A';
 		} else if(myEnglishResult > 80){
 			englishGrade = 'B';
+		} else if (myEnglishResult > 70){
+			englishGrade = 'B-';
+		} else if (myEnglishResult > 60){
+			englishGrade = 'C';
+		} else if (myEnglishResult > 50){
+			englishGrade = 'C-'; 
+		} else if (myEnglishResult > 40){
+			englishGrade = 'D';
 		} else {
 			englishGrade = 'F';
 		}
@@ -29,6 +37,14 @@ function gradeResult(){
 			irishGrade = 'A';
 		} else if(myIrishResult > 80){
 			irishGrade = 'B';
+		} else if (myIrishResult > 70){
+			irishGrade = 'B-';
+		} else if (myIrishResult > 60){
+			irishGrade = 'C';
+		} else if (myIrishResult > 50){
+			irishGrade = 'C-'; 
+		} else if (myIrishResult > 40){
+			irishGrade = 'D';
 		} else {
 			irishGrade = 'F';
 		}
@@ -38,15 +54,23 @@ function gradeResult(){
 		alert("Please enter a result!");
 	}
 	else {
-		if(myMathsResult >90){
+		if(myMathsResult > 90){
 			mathsGrade = 'A';
 		} else if(myMathsResult > 80){
 			mathsGrade = 'B';
+		} else if (myMathsResult > 70){
+			mathsGrade = 'B-';
+		} else if (myMathsResult > 60){
+			mathsGrade = 'C';
+		} else if (myMathsResult > 50){
+			mathsGrade = 'C-'; 
+		} else if (myMathsResult > 40){
+			mathsGrade = 'D';
 		} else {
 			mathsGrade = 'F';
 		}
+	}	
 	
-	}
 		//Only output to the HTML File if a result for that subject is entered
 		
 		var englishMessage = 'Your result of ' + myEnglishResult + ' gets you a grade ' + englishGrade;
